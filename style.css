@@ -256,7 +256,7 @@ main {
 }
 
 /* Mobile phone */
-@media (max-width: 376px) {
+@media (max-width: 576px) {
     html {
         font-size: 60%;
     }
@@ -269,5 +269,19 @@ main {
     .simply-countdown>.simply-section:hover {
         padding: 45px;
         margin: 4px;
+    }
+}
+
+@media (max-width: 476px) {
+    html {
+        font-size: 50%;
+    }
+    .simply-countdown>.simply-section {
+        padding: 30px;
+        margin: 3px;
+    }
+    .simply-countdown>.simply-section:hover {
+        padding: 30px;
+        margin: 3px;
     }
 }

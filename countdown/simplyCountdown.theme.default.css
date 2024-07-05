@@ -91,4 +91,8 @@
         padding: 30px;
         margin: 3px;
     }
+    .simply-countdown>.simply-section:hover {
+        padding: 30px;
+        margin: 3px;
+    }
 }

@@ -1,0 +1,273 @@
+:root {
+    --dark-blue: #615EFC;
+    --light-blue: #7E8EF1;
+    --light-green: #D1D8C5;
+    --light-red: #EEEEEE;
+    --black: #000000;
+    --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    --dark-blue-shadow: rgba(39, 36.9, 98.8, 0.5);
+    --light-blue-shadow: rgba(49.4, 55.7, 94.5, 0.5);
+    --light-green-shadow: rgba(82, 84.7, 77.3, 0.5);
+    --light-red-shadow: rgba(93.3, 93.3, 93.3, 0.5);
+    --netherland-text: "Playwrite NL", cursive;
+    --sans-text: "Work Sans", sans-serif;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: var(--sans-text);
+    min-height: 2000px;
+}
+
+/* Hero style */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(img/bg-wedding.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero h4,
+.hero h1,
+.hero p {
+    text-shadow: var(--shadow);
+}
+
+.hero h4 {
+    font-size: 1.6rem;
+    color: var(--light-red);
+}
+
+.hero h1 {
+    font-family: var(--netherland-text);
+    font-size: 3rem;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    color: var(--light-red);
+}
+
+.hero p {
+    font-size: 1.4rem;
+    color: var(--light-red);
+}
+
+.hero a {
+    color: var(--light-green);
+    background-color: var(--light-blue);
+    border: 1px solid var(--black);
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+    border: 1px solid var(--light-blue);
+    color: var(--light-red);
+    background-color: transparent;
+    box-shadow: var(--shadow);
+}
+/* End hero style */
+
+/* Main style */
+main {
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 20px;
+}
+/* End main style */
+
+/* Navbar style */
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(3px);
+}
+
+.mynavbar .offcanvas {
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+    font-family: var(--netherland-text);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.mynavbar .nav-link {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+/* End navbar style */
+
+/* Home style */
+.home {
+    background-image: url(img/home-wedding.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -4.6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+.home h2 {
+    color: var(--dark-blue);
+    font-family: var(--netherland-text);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+}
+.home h3 {
+    color: var(--light-blue);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.home p {
+    font-size: 1.1rem;
+    color: var(--black);
+    text-shadow: var(--shadow);
+}
+.home .couple {
+    margin-top: 100px;
+}
+.home .couple h3 {
+    font-family: var(--netherland-text);
+    font-size: 2.4rem;
+    color: var(--dark-blue);
+}
+.home .couple img {
+    width: 100%;
+}
+.home .heart {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(65px);
+}
+.home .heart i {
+    margin: auto;
+    margin-top: 13px;
+    color: var(--light-blue);
+}
+/* End home style */
+
+/* Info style */
+.info {
+    background-color: var(--light-blue);
+    color: var(--light-red);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.info h2 {
+    color: var(--dark-blue);
+    font-family: var(--netherland-text);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+}
+.info .alamat {
+    font-size: 1.1rem;
+}
+.info .description {
+    font-size: 1rem;
+    font-weight: 300;
+}
+.info .card {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    border: 1px solid var(--black);
+    box-shadow: 5px 8px 3px rgba(0, 0, 0, 0.5);
+}
+.info .card-header {
+    border-bottom: 1px solid var(--black);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+.info .card-body {
+    font-size: 1rem;
+}
+.info .card-footer {
+    border-top: 1px solid var(--black);
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+/* Media query */
+/* Extra large */
+@media (max-width: 1200px) {
+    .home .heart {
+        width: 30px;
+        height: 30px;
+        transform: translateX(-50%) translateY(55px);
+    }
+    .home .heart i {
+        font-size: 15px;
+        margin: auto;
+        margin-bottom: 2px;
+        margin-left: -5px;
+    }
+}
+/* Laptop */
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+
+    .simply-countdown>.simply-section {
+        padding: 70px;
+    }
+
+    .home .heart {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+
+    .simply-countdown>.simply-section {
+        padding: 60px;
+        margin: 5px;
+    }
+
+    .mynavbar .nav-link {
+        font-size: 1.8rem;
+        text-align: center;    
+    }
+
+    .home .heart {
+        display: none;
+    }
+}
+
+/* Mobile phone */
+@media (max-width: 576px) {
+    html {
+        font-size: 60%;
+    }
+
+    .simply-countdown>.simply-section {
+        padding: 45px;
+        margin: 4px;
+    }
+
+    .simply-countdown>.simply-section:hover {
+        padding: 45px;
+        margin: 4px;
+    }
+}

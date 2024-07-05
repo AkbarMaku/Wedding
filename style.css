@@ -285,3 +285,17 @@ main {
         margin: 3px;
     }
 }
+
+@media (max-width: 325px) {
+    html {
+        font-size: 40%;
+    }
+    .simply-countdown>.simply-section {
+        padding: 26px;
+        margin: 4px;
+    }
+    .simply-countdown>.simply-section:hover {
+        padding: 26px;
+        margin: 4px;
+    }
+}

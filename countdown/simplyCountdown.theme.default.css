@@ -82,3 +82,13 @@
         margin: 4px;
     }
 }
+
+@media (max-width: 476px) {
+    html {
+        font-size: 50%;
+    }
+    .simply-countdown>.simply-section {
+        padding: 30px;
+        margin: 3px;
+    }
+}

@@ -16,7 +16,7 @@
 body {
     font-size: 1.2rem;
     font-family: var(--sans-text);
-    min-height: none;
+    min-height: none !important;
 }
 
 /* Hero style */
@@ -641,6 +641,6 @@ main {
     }
 
     body {
-        min-height: none;
+        min-height: none !important;
     }
 }

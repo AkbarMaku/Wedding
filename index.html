@@ -174,6 +174,64 @@
       </div>
     </div>
   </section>
+  <!-- End info -->
+
+  <!-- Story -->
+  <section id="story" class="story">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <span>The History of Us</span>
+          <h2>Our Love Story</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, delectus minima! Consequatur architecto doloremque quidem!</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-img" style="background-image: url(img/SMA.jpg);"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>First meet</h3>
+                  <span>10 Agustus 2022</span>
+                </div>
+                <div class="timeline-body">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolore natus illo illum eius assumenda.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-img" style="background-image: url(https://picsum.photos/300/300);"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Having a relationship</h3>
+                  <span>11 November 2022</span>
+                </div>
+                <div class="timeline-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam veritatis tempora explicabo quaerat beatae optio similique obcaecati et!</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-img" style="background-image: url(https://picsum.photos/301/301);"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Prepared for wedding</h3>
+                  <span>11 November 2023</span>
+                </div>
+                <div class="timeline-body">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, facere tempore? Laudantium pariatur, saepe reprehenderit doloribus modi vero soluta maxime.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End story -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -192,6 +250,19 @@
         seconds: { singular: 'detik', plural: 'detik' }
       },
     });
+  </script>
+
+  <script>
+    const stickyTop = document.querySelector('.sticky-top');
+    const offcanvas = document.querySelector('.offcanvas');
+
+    offcanvas.addEventListener('show.bs.offcanvas', function() {
+      stickyTop.style.overflow = 'visible';
+    });
+
+    offcanvas.addEventListener('hidden.bs.offcanvas', function() {
+      stickyTop.style.overflow = 'hidden';
+    });    
   </script>
 
 </body>

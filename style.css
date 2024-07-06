@@ -16,7 +16,7 @@
 body {
     font-size: 1.2rem;
     font-family: var(--sans-text);
-    /* min-height: 2000px; */
+    min-height: none;
 }
 
 /* Hero style */
@@ -638,5 +638,9 @@ main {
 
     .navbar-toggler {
         display: none;
+    }
+
+    body {
+        min-height: none;
     }
 }

@@ -589,6 +589,10 @@ main {
     .timeline li.timeline-inverted .timeline-panel::after {
         top: 61px;
     }
+
+    .navbar-toggler {
+        display: none;
+    }
 }
 
 @media (max-width: 325px) {

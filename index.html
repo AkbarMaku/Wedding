@@ -32,11 +32,11 @@
   <section id="hero"
     class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
     <main>
-      <h4>Kepada Bapak/Ibu/Saudara/i, </h4>
+      <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
       <h1>Someone & Someone</h1>
       <p>Akan melangsungkan resepsi pernikahan dalam:</p>
       <div class="simply-countdown"></div>
-      <a href="#undangan" class="btn btn-lg mt-4">Lihat undangan</a>
+      <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()">Lihat undangan</a>
     </main>
   </section>
   <!-- End hero -->
@@ -60,7 +60,7 @@
             <a class="nav-link" href="#info">Info</a>
             <a class="nav-link" href="#story">Story</a>
             <a class="nav-link" href="#gallery">Gallery</a>
-            <a class="nav-link" href="#rsvp">Rsvp</a>
+            <a class="nav-link" href="#attendance">Attendance</a>
             <a class="nav-link" href="#gift">Gift</a>
           </div>
         </div>
@@ -124,8 +124,12 @@
           <h2>Informasi Acara</h2>
           <p class="alamat">Alamat: Gedung Sudirman Grand Ballroom <br> Jl. Jend. Sudirman No.620, Dungus Cariang, Kec.
             Andir, Kota Bandung</p>
-          <a href="https://maps.app.goo.gl/xLnJ1gyqaN2gzHAF7" target="_blank" class="btn btn-light btn-sm my-3">Klik
-            untuk membuka peta</a>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.774821015109!2d107.5795936!3d-6.917502799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e608cfa0c18d%3A0xbe7da28b948823b!2sSudirman%20Grand%20Ballroom!5e0!3m2!1sid!2sid!4v1720358804883!5m2!1sid!2sid"
+          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+          <a href="https://maps.app.goo.gl/xLnJ1gyqaN2gzHAF7" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk membuka peta lebih besar</a>
           <p class="description">Diharapkan untuk tidak salah alamat dan datang sesuai tanggal</p>
         </div>
       </div>
@@ -250,32 +254,38 @@
 
       <div class="row row-cols-md-3 row-cols-sm-2 row-cols-1">
         <div class="col mt-3">
-          <a href="img/gallery/picture-1.jpg" data-toggle="lightbox" data-caption="Someone and Someone 1" data-gallery="mygallery">
+          <a href="img/gallery/picture-1.jpg" data-toggle="lightbox" data-caption="Someone and Someone 1"
+            data-gallery="mygallery">
             <img src="img/gallery/thumbnail/picture-1.jpg" alt="Someone and Someone 1" class="img-fluid w-100 rounded">
           </a>
         </div>
         <div class="col mt-3">
-          <a href="img/gallery/picture-2.jpg" data-toggle="lightbox" data-caption="Someone and Someone 2" data-gallery="mygallery">
+          <a href="img/gallery/picture-2.jpg" data-toggle="lightbox" data-caption="Someone and Someone 2"
+            data-gallery="mygallery">
             <img src="img/gallery/thumbnail/picture-2.jpg" alt="Someone and Someone 2" class="img-fluid w-100 rounded">
           </a>
         </div>
         <div class="col mt-3">
-          <a href="img/gallery/picture-3.jpg" data-toggle="lightbox" data-caption="Someone and Someone 3" data-gallery="mygallery">
+          <a href="img/gallery/picture-3.jpg" data-toggle="lightbox" data-caption="Someone and Someone 3"
+            data-gallery="mygallery">
             <img src="img/gallery/thumbnail/picture-3.jpg" alt="Someone and Someone 2" class="img-fluid w-100 rounded">
           </a>
         </div>
         <div class="col mt-3">
-          <a href="img/gallery/picture-1.jpg" data-toggle="lightbox" data-caption="Someone and Someone 1" data-gallery="mygallery">
+          <a href="img/gallery/picture-1.jpg" data-toggle="lightbox" data-caption="Someone and Someone 1"
+            data-gallery="mygallery">
             <img src="img/gallery/thumbnail/picture-1.jpg" alt="Someone and Someone 1" class="img-fluid w-100 rounded">
           </a>
         </div>
         <div class="col mt-3">
-          <a href="img/gallery/picture-2.jpg" data-toggle="lightbox" data-caption="Someone and Someone 2" data-gallery="mygallery">
+          <a href="img/gallery/picture-2.jpg" data-toggle="lightbox" data-caption="Someone and Someone 2"
+            data-gallery="mygallery">
             <img src="img/gallery/thumbnail/picture-2.jpg" alt="Someone and Someone 2" class="img-fluid w-100 rounded">
           </a>
         </div>
         <div class="col mt-3">
-          <a href="img/gallery/picture-3.jpg" data-toggle="lightbox" data-caption="Someone and Someone 3" data-gallery="mygallery">
+          <a href="img/gallery/picture-3.jpg" data-toggle="lightbox" data-caption="Someone and Someone 3"
+            data-gallery="mygallery">
             <img src="img/gallery/thumbnail/picture-3.jpg" alt="Someone and Someone 2" class="img-fluid w-100 rounded">
           </a>
         </div>
@@ -283,6 +293,115 @@
     </div>
   </section>
   <!-- End gallery -->
+
+  <!-- Attendance -->
+  <section id="attendance" class="attendance">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <h2>Confirmation of attendance</h2>
+          <p>Fill out the form bellow to confirm your attendance</p>
+        </div>
+      </div>
+
+      <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST"
+        action="https://script.google.com/macros/s/AKfycbytoMfJsGOfXtxnIHJRh3T3voVoUU6TFpUJJORWvPSqlId_8DpGsYjhiEGGFAt6dp53/exec"
+        id="my-form">
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" autocomplete="off" required>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="amount" class="form-label">Amount</label>
+            <input type="number" class="form-control" id="amount" name="amount" min="1" max="5" value="1">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="status" class="form-label">Confirm</label>
+            <select name="status" id="status" class="form-select">
+              <option selected>Choose one of the following</option>
+              <option value="1">Attend</option>
+              <option value="0">Absent</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary">Send</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- End attendance -->
+
+  <!-- Gift -->
+  <section id="gift" class="gift">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <span>Expression of affection</span>
+          <h2>Send some gifts</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, rem.</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center text-center">
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="bank fw-bold">BRI</div>
+              123456789 A/N Someone
+            </li>
+            <li class="list-group-item">
+              <div class="bank fw-bold">BCA</div>
+              987654321 A/N Someone
+            </li>
+            <li class="list-group-item">
+              <div class="bank fw-bold">Mandiri</div>
+              192837465 A/N Someone
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End gift -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <small class="block">&copy; 2024 Wedding. All Right Reserved.</small>
+          <small class="block">Design by <a href="https://www.instagram.com/aakbarmaku" target="_blank">@akbarmaku</a>
+          </small>
+
+          <ul class="mt-3">
+            <li><a href="https://www.instagram.com/aakbarmaku" target="_blank"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/akbar.maku.71?locale=id_ID" target="_blank"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCeS3cqHPDui06YDUkhyoehA" target="_blank"><i class="bi bi-youtube"></i></a></li>
+            <li><a href="https://www.tiktok.com/@akbaarss" target="_blank"><i class="bi bi-tiktok"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer -->
+
+  <!-- Audio -->
+  <div id="audio-container">
+    <audio id="bgm" autoplay loop>
+      <source src="audio/Yellow-ColdPlay.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="audio-icon-wrapper" style="display: none;">
+      <i class="bi bi-disc"></i>
+    </div>
+  </div>
+  <!-- End audio -->
 
   <!-- Script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -318,6 +437,89 @@
       stickyTop.style.overflow = 'hidden';
     });    
   </script>
+
+  <script>
+    const rootElement = document.querySelector(":root");
+    const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+    const bgm = document.querySelector('#bgm');
+    const audioIcon = document.querySelector('.audio-icon-wrapper i');
+    let isPlaying = false;
+
+    function disableScroll() {
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+      window.onscroll = function () {
+        window.scrollTo(screenTop, screenLeft);
+      }
+
+      rootElement.style.scrollBehavior = 'auto';
+    }
+
+    function enableScroll() {
+      window.onscroll = function () { }
+      rootElement.style.scrollBehavior = 'smooth';
+      // localStorage.setItem('opened', 'true');
+      playAudio();
+    }
+
+    function playAudio() {
+      bgm.volume = 0.3;
+      audioIconWrapper.style.display = 'flex';
+      bgm.play();
+      isPlaying = true;
+    }
+
+    audioIconWrapper.onclick = function () {
+      if (isPlaying) {
+        bgm.pause();
+        audioIcon.classList.remove('bi-disc');
+        audioIcon.classList.add('bi-pause-circle');
+      } else {
+        bgm.play();
+        audioIcon.classList.add('bi-disc');
+        audioIcon.classList.remove('bi-pause-circle');
+      }
+
+      isPlaying = !isPlaying;
+    }
+
+    // if (!localStorage.getItem('opened')) {
+    //   
+    // }
+    disableScroll();
+  </script>
+
+  <script>
+    window.addEventListener("load", function () {
+      const form = document.getElementById('my-form');
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const action = e.target.action;
+        fetch(action, {
+          method: 'POST',
+          body: data,
+        })
+          .then(() => {
+            alert("Attedance confirmation successful!");
+          })
+      });
+    });
+
+  </script>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const name = urlParams.get('n') || '';
+    const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+
+    const containerName = document.querySelector('.hero h4 span');
+    containerName.innerText = `${pronoun} ${name},`.replace(/ ,$/, ',');
+
+    document.querySelector('#name').value = name;
+  </script>
+  <!-- End script -->
 
 </body>
 

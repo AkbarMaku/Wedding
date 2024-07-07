@@ -75,6 +75,14 @@ body {
     box-shadow: var(--shadow);
 }
 
+.hero .btn {
+    background: var(--dark-blue);
+}
+
+.hero .btn:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
 /* End hero style */
 
 /* Main style */
@@ -114,8 +122,6 @@ main {
 .home {
     background-image: url(img/bg-home-wedding.jpg);
     background-size: cover;
-    min-height: 100vh;
-    margin-top: -4.6rem;
     padding-top: 10rem;
     padding-bottom: 10rem;
 }
@@ -231,6 +237,7 @@ main {
     font-weight: bold;
     margin-bottom: 2.5rem;
 }
+
 .story {
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -239,6 +246,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .story span {
     text-transform: uppercase;
     color: var(--light-blue);
@@ -247,16 +255,19 @@ main {
     display: block;
     margin-bottom: 2rem;
 }
+
 .story p {
     font-size: 1rem;
     font-weight: 300;
 }
+
 .timeline {
     list-style: none;
     padding: 1.4rem 0;
     margin-top: 1rem;
     position: relative;
 }
+
 .timeline::before {
     content: '';
     top: 0;
@@ -266,18 +277,22 @@ main {
     background-color: var(--black);
     left: 50%;
 }
+
 .timeline li {
     margin-bottom: 1.5rem;
     position: relative;
 }
+
 .timeline li::before,
 .timeline li::after {
     content: '';
     display: table;
 }
+
 .timeline li::after {
     clear: both;
 }
+
 .timeline li .timeline-img {
     width: 160px;
     height: 160px;
@@ -291,6 +306,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .timeline li .timeline-panel {
     width: 40%;
     float: left;
@@ -300,6 +316,7 @@ main {
     border-radius: 5px;
     background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.2));
 }
+
 .timeline li .timeline-panel::before {
     content: '';
     display: inline-block;
@@ -311,6 +328,7 @@ main {
     top: 90px;
     right: -15px;
 }
+
 .timeline li .timeline-panel::after {
     content: '';
     position: absolute;
@@ -322,10 +340,12 @@ main {
     top: 91px;
     right: -13px;
 }
+
 .timeline li.timeline-inverted .timeline-panel {
     float: right;
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 }
+
 .timeline li.timeline-inverted .timeline-panel::before {
     border-left-width: 0;
     border-right-width: 15px;
@@ -333,6 +353,7 @@ main {
     right: auto;
     top: 100px;
 }
+
 .timeline li.timeline-inverted .timeline-panel::after {
     border-left-width: 0;
     border-right-width: 14px;
@@ -351,6 +372,7 @@ main {
     font-weight: bold;
     margin-bottom: 2.5rem;
 }
+
 .gallery {
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -359,6 +381,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .gallery span {
     text-transform: uppercase;
     color: var(--light-blue);
@@ -367,14 +390,163 @@ main {
     display: block;
     margin-bottom: 2rem;
 }
+
 .gallery p {
     font-size: 1rem;
     font-weight: 300;
     color: var(--light-red);
 }
 
-/* Media query */
+/* End gallery style */
 
+/* Attendance style */
+.attendance h2 {
+    color: var(--dark-blue);
+    font-family: var(--netherland-text);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+}
+
+.attendance {
+    background-color: var(--light-blue);
+    background-size: cover;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.attendance p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--light-red);
+}
+
+.attendance form label {
+    color: var(--light-red);
+}
+
+.attendance button {
+    background-color: var(--dark-blue);
+    color: var(--black);
+    border: 1px solid var(--black);
+    margin-top: 20px;
+}
+
+.attendance button:hover {
+    background-color: var(--light-blue);
+    color: var(--black);
+    border: 1px solid var(--dark-blue);
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* End attendance style */
+
+/* Gift style */
+.gift span {
+    text-transform: uppercase;
+    color: var(--light-blue);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.gift h2 {
+    color: var(--dark-blue);
+    font-family: var(--netherland-text);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+}
+
+.gift {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-image: url(img/bg-gift-wedding.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gift p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.gift ul li {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.gift .bank {
+    color: var(--light-blue);
+}
+
+/* End gift style */
+
+/* Footer style */
+footer {
+    padding: 3rem;
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: var(--black);
+}
+
+footer li {
+    display: inline;
+    list-style: none;
+    margin: 0.5rem;
+}
+
+footer li i {
+    font-size: 150%;
+}
+
+/* End footer style */
+
+/* Audio style */
+.audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.6;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+/* End audio style */
+
+/* Animation */
+@keyframes rotating {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* End animation */
+
+/* Media query */
 /* Extra large */
 @media (max-width: 1200px) {
     .home .heart {
@@ -518,7 +690,7 @@ main {
         top: 66px;
     }
 
-    .timeline li.timeline-inverted .timeline-panel::before{
+    .timeline li.timeline-inverted .timeline-panel::before {
         border-left-width: 0;
         border-right-width: 15px;
         left: -15px;
@@ -526,7 +698,7 @@ main {
         top: 65px;
     }
 
-    .timeline li.timeline-inverted .timeline-panel::after{
+    .timeline li.timeline-inverted .timeline-panel::after {
         border-left-width: 0;
         border-right-width: 14px;
         left: -13px;

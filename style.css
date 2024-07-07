@@ -766,8 +766,8 @@ footer li i {
     }
 
     .timeline li .timeline-img {
-        width: 20px;
-        height: 20px;
+        width: 100px !important;
+        height: 100px !important;
     }
 
     .timeline li .timeline-panel {

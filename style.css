@@ -16,7 +16,6 @@
 body {
     font-size: 1.2rem;
     font-family: var(--sans-text);
-    min-height: none;
 }
 
 /* Hero style */
@@ -113,7 +112,7 @@ main {
 
 /* Home style */
 .home {
-    background-image: url(img/home-wedding.jpg);
+    background-image: url(img/bg-home-wedding.jpg);
     background-size: cover;
     min-height: 100vh;
     margin-top: -4.6rem;
@@ -235,7 +234,7 @@ main {
 .story {
     padding-top: 10rem;
     padding-bottom: 10rem;
-    background-image: url(img/flower.jpg);
+    background-image: url(img/bg-story-timeline-wedding.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -343,6 +342,36 @@ main {
 }
 
 /* End story style */
+
+/* Gallery style */
+.gallery h2 {
+    color: var(--dark-blue);
+    font-family: var(--netherland-text);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+}
+.gallery {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(img/bg-gallery-wedding.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery span {
+    text-transform: uppercase;
+    color: var(--light-blue);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 2rem;
+}
+.gallery p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--light-red);
+}
 
 /* Media query */
 
@@ -638,9 +667,5 @@ main {
 
     .navbar-toggler {
         display: none;
-    }
-
-    body {
-        min-height: none;
     }
 }
